@@ -1,8 +1,14 @@
-
 language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: LxYOHBYloucRH4ubDhsIDI6pwWRG3pK0Qxmd+8pHWe2k8moFyIiWxmsjKLUGdAxga4YYtpLCmYmT7kToVoWD3/TCGbGWhJnzJeafuvQUgh5p/oTdfzTXyZcgy4wekaJP0ubZrZWM5CB3Cj0Du4j4bUv266/B5zu9ei/04IYYGua+eXIKK/UnPVIqEoDwkaUu1R4h5XftHdc/LlJ3ZbWJ76T1foHQdfIe0kdJUygULAtcHfRGmKNDibEa15kVftVzSlAJNis5EJQXW1bKKlSO2TWrWreayJOzFuofGKHUP0s/tId58Fw67FaFNA+ngVeuZCpWV0eax0OXzByG9TViyw5fR/MuO+rciZP573aYledXuja38tAzi+i3ycyA8v5PW+H1dtQtAiNh7h3mAoC/ViTFL6alcnwdTmPNEudjoLDuvD7OscOqAfncW59YQ+0y9iWUv+eNq6kb3rt/fUdpUmCmqJCxGqHjvz1ZmOuBl+kxKyNdHNpKeDEdn6mevMbiNcJ/8DCt7kbMN19kvrw6z6/eKT5T8gfw8WF1OfvzTeg6xwQJL8GPJD+33oFd4JhidGm8/uI8oQ2RxFYVoxY/rjTiBkYtmRt1cTMU2gw5HcG+OzXC1RevmMw/b7B5TtG82jb3MzdHSMibxwRl975LAF0cUmC0JamohKyoEoD/jAY=
+  app: pacific-beach-39447
+  on:
+    repo: Vallsurf/react-trello-testing
